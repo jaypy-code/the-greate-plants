@@ -1,0 +1,39 @@
+section#gallery {
+    position: relative;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #19271f;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    div.background-image {
+        position: absolute;
+        right: 0;
+        top: 10vh;
+
+        width: 40vh;
+        height: 80vh;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    div.content {
+        position: relative;
+        top: 0;
+
+        width: 80vw;
+        height: 50vh;
+
+        padding: 0 10vw;
+
+        display: flex;
+        align-items: center;
+    }
+}

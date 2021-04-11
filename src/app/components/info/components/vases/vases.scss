@@ -1,0 +1,27 @@
+section#info div.vase {
+    position: absolute;
+    bottom: -15vh;
+    left: -20vw;
+
+    width: 80vw;
+    height: 150vh;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    z-index: 1;
+}
+
+@media screen and (max-width: 700px) {
+    section#info div.vase {
+        width: 100vw;
+        height: 100vh;
+
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        z-index: 1;
+    }
+}

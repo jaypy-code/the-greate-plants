@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap");
+
+* {
+  border: none;
+  outline: none;
+  user-select: none;
+  font-family: "Ubuntu", sans-serif;
+
+  scrollbar-width: thin;
+  scrollbar-color: #779484 rgba(0, 0, 0, 0.1);
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #779484;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #1d2d23;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+
+*/
+
+div.pin-spacer {
+  z-index: 1 !important;
+}

@@ -1,0 +1,38 @@
+section#main p {
+    font-size: 2vw;
+    font-weight: 100;
+
+    line-height: 1.5em;
+
+    text-align: center;
+
+    color: #b9ccaa;
+
+    word-spacing: 0.7em;
+
+    margin-bottom: 12vh;
+}
+
+@media screen and (max-width: 1400px) {
+    section#main p {
+        font-weight: 400;
+
+        margin-bottom: 15vh;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    section#main p {
+        font-size: 4vw;
+
+        text-align: left;
+
+        margin-bottom: 12vh;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    section#main p {
+        font-size: 6vw;
+    }
+}

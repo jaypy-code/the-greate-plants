@@ -1,0 +1,20 @@
+section#order {
+    position: relative;
+
+    width: 100vw;
+    height: 65vh;
+
+    background-color: #19271f;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div.content {
+        width: 100vw;
+        height: 55vh;
+
+        display: flex;
+        flex-direction: column;
+    }
+}

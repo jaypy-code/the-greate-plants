@@ -1,0 +1,34 @@
+section#gallery div.images {
+    position: relative;
+
+    width: 100vw;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    z-index: 1;
+
+    div.image:not(.open) {
+        margin-right: calc(var(--index) * 18vw);
+        z-index: calc(var(--index) * -1);
+    }
+
+    &:not([style]) div.image:hover {
+        bottom: 6vh;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    section#gallery div.images {
+        width: 100vw;
+
+        min-height: 350px;
+
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}

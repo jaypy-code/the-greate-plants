@@ -1,0 +1,22 @@
+section#order p {
+    color: #bebdb8;
+
+    width: 60vw;
+
+    margin: 2vh auto 0 auto;
+
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+@media screen and (max-width: 1300px) {
+    section#order p {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    section#order p {
+        font-size: 4vw;
+    }
+}

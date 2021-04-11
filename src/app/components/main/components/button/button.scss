@@ -1,0 +1,58 @@
+$color: #2e5212;
+$speed: 0.3s;
+
+section#main a {
+    position: relative;
+
+    width: 200px;
+    height: 56px;
+    line-height: 56px;
+
+    border: 1px solid $color;
+    border-radius: 2px;
+
+    color: $color;
+
+    text-align: center;
+
+    font-size: 1.2em;
+
+    overflow: hidden;
+
+    z-index: 2;
+
+    transition: color $speed;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        height: 0;
+
+        background-color: $color;
+
+        z-index: -1;
+
+        transition: height $speed;
+    }
+
+    &:hover {
+        color: white;
+
+        &::before {
+            height: 100%;
+        }
+    }
+
+    &:active {
+        font-size: 1.1em;
+
+        transition: font-size 0s;
+    }
+}

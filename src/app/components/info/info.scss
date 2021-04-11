@@ -1,0 +1,29 @@
+section#info {
+    position: relative;
+
+    background-color: #1d2d23;
+
+    width: 100vw;
+    height: 100vh;
+
+    div.content {
+        padding-top: 5vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.end-scroll {
+        position: relative;
+
+        margin-top: 100vh;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    section#info div.end-scroll {
+        margin-top: -100vh;
+    }
+}

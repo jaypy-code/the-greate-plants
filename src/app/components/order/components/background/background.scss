@@ -1,0 +1,78 @@
+section#order div.background-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 100vw;
+    height: 20vw;
+    overflow: hidden;
+
+    div.leaves {
+        position: absolute;
+        bottom: 0;
+
+        width: 20vw;
+        height: 20vw;
+
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        transform-origin: center bottom;
+
+        &.right {
+            right: 5vw;
+            bottom: -0.5vw;
+
+            animation: dancing 15s infinite linear;
+        }
+
+        &.left {
+            left: 5vw;
+            bottom: -1.3vw;
+
+            animation: dancing 10s infinite linear reverse;
+        }
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    section#order div.background-image {
+        height: 30vw;
+
+        div.leaves {
+            width: 30vw;
+            height: 30vw;
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    section#order div.background-image {
+        height: 40vw;
+
+        div.leaves {
+            width: 40vw;
+            height: 40vw;
+
+            &.right {
+                right: -10vw;
+            }
+
+            &.left {
+                left: -10vw;
+            }
+        }
+    }
+}
+
+@keyframes dancing {
+    35% {
+        transform: rotate(-5deg);
+    }
+
+    65% {
+        transform: rotate(10deg);
+    }
+}
